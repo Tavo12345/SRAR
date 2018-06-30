@@ -9,19 +9,19 @@ and open the template in the editor.
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui">
     <h:head>
-        <title>Crear Persona</title>
+        <title>Crear Proyecto</title>
         <!--meta name="viewport" content="width=device-width, initial-scale=1.0"/-->
     </h:head>
     <h:body>
         <h:form>
-            <p:fieldset legend="Crear Persona" >
-                <p:outputLabel value="Codigo:" />
-                <p:inputText value="#{personaController.persona.codigoPersona}"/>
-                <p:outputLabel value="Nombres:" />
-                <p:inputText value="#{personaController.persona.nombres}"/>
-                <p:outputLabel value="Apellidos:" />
-                <p:inputText value="#{personaController.persona.apellidos}"/>
-                <p:commandButton value="Register" actionListener="#{personaController.registrar()}"/>
+            <p:fieldset legend="Crear Proyecto" >
+                <p:outputLabel value="Codigo proyecto:" />
+                <p:inputText value="#{proyectoController.proyecto.codigoProyecto}"/>
+                <p:outputLabel value="Nombre proyecto:" />
+                <p:inputText value="#{proyectoController.proyecto.nombreProyecto}"/>
+                <p:outputLabel value="Descripción:" />
+                <p:inputTextarea value="#{proyectoController.proyecto.descripcion}"/>
+                <p:commandButton value="Register" actionListener="#{proyectoController.registrar()}"/>
                 <p:link value="Gestión de actas" outcome="index" />
             </p:fieldset>
         </h:form>
