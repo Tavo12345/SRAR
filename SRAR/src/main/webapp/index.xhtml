@@ -4,12 +4,21 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui">      
     <h:head>
-        <title>Facelet Title</title>
+        <title>Inicio</title>
     </h:head>
     <h:body>
         <h:form>
-            <p:inputText />
-            <p:commandButton value="Registar" />
+            <p:fieldset legend="Gestión de actas">
+                <br /> 
+                <br />
+                <p:link value="Crear Persona" outcome="persona" />
+                <br />
+                <br />
+                <p:link value="Crear Proyecto" outcome="proyecto" />
+                <br />
+                <br />
+                <p:link value="Crear Acta" outcome="acta" />
+            </p:fieldset>
         </h:form>
     </h:body>
 </html>

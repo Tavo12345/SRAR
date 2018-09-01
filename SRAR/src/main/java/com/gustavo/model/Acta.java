@@ -40,13 +40,15 @@ public class Acta implements Serializable {
     @Column(name="fecha")
     private Date fecha;
     
-    @Temporal(TemporalType.TIME)
+    @Temporal(TemporalType.DATE)
+    //@Temporal(TemporalType.TIME)
     @Column(name="horaInicio")
-    private Time horaInicio;
+    private Date horaInicio;
     
-    @Temporal(TemporalType.TIME)
+    @Temporal(TemporalType.DATE)
+    //@Temporal(TemporalType.TIME)
     @Column(name="horaFin")
-    private Time horaFin;
+    private Date horaFin;
     
     @Temporal(TemporalType.DATE)
     @Column(name="fechaProximaReunion")
@@ -84,7 +86,7 @@ public class Acta implements Serializable {
         this.fecha = fecha;
     }
 
-    public Time getHoraInicio() {
+    public Date getHoraInicio() {
         return horaInicio;
     }
 
@@ -92,7 +94,7 @@ public class Acta implements Serializable {
         this.horaInicio = horaInicio;
     }
 
-    public Time getHoraFin() {
+    public Date getHoraFin() {
         return horaFin;
     }
 
